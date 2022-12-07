@@ -13,10 +13,11 @@ dir <- "C:/Users/XX/AppData/Local/R/win-library/4.2/GenomicFeatures/extdata/seq"
 gffmodel <- file.path(dir,"GCF_009819885.2_bCatUst1.pri.v2_genomic.gff")
 (txdb <- makeTxDbFromGFF(file="GCF_009819885.2_bCatUst1.pri.v2.gff", format="gff3", dataSource = "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/819/885/GCF_009819885.2_bCatUst1.pri.v2/", organism = "Catharus ustulatus"))
 
+
+#Import genomic features from the file as a GRanges object ... OK
+#Prepare the 'metadata' data frame ... OK
+#Make the TxDb object ... OK
 ```
-Import genomic features from the file as a GRanges object ... OK
-Prepare the 'metadata' data frame ... OK
-Make the TxDb object ... OK
 TxDb object:
 
 Db type: TxDb
